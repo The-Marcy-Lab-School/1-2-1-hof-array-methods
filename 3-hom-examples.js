@@ -31,6 +31,26 @@ const doubledNums = nums.map((num) => num * 2);
 
 
 
+// Nested Array
+const smileyFace = [
+  [' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', '*', ' ', '*', ' ', ' '],
+  [' ', ' ', '*', ' ', '*', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', '*', ' ', ' ', ' ', '*', ' '],
+  [' ', ' ', '*', '*', '*', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ', ' ', ' '],
+]
+
+// We can nest the forEach calls
+smileyFace.forEach((row, r) => {
+  let str = `${r}: `;
+  row.forEach(cell => {
+    str += cell;
+  })
+  console.log(str)
+});
+
 
 
 
